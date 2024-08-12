@@ -1,6 +1,5 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-
 import user from "../data/user";
 import About from "../components/About";
 
