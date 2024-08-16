@@ -1,18 +1,19 @@
 import React from "react";
-import NavBar from "./NavBar";
-import Home from "./Home";
+import blogData from "../data/blog";
+import Article from "./Article";
+import Header from "./Header";
 import About from "./About";
 
-// pass this data down as props to the child component(s) that need it!
-import user from "../data/user";
-console.log(user);
+console.log(blogData);
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <Home />
-      <About />
+    <div className="App">
+     <Header name={blogData.name} />
+     You're on your own from here! Follow the deliverables; test things out in
+      the browser as you write your code; and good luck!
+     <About />
+     <Article />
     </div>
   );
 }
